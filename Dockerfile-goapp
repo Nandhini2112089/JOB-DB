@@ -1,0 +1,11 @@
+FROM debian:bullseye-slim
+
+WORKDIR /app
+
+COPY dist/job_portal_binary /app/job_portal
+
+RUN chmod +x /app/job_portal
+
+EXPOSE 8080
+
+ENTRYPOINT ["/app/job_portal"]
