@@ -6,6 +6,6 @@ COPY dist/myapp /app/job_portal
 
 RUN chmod +x /app/job_portal
 
-EXPOSE 8080
+EXPOSE 9091
 
 ENTRYPOINT ["/app/job_portal"]
