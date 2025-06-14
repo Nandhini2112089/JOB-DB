@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY dist/myapp /app/job_portal
 
+COPY config /app/Config
+
 RUN chmod +x /app/job_portal
 
 EXPOSE 9091
