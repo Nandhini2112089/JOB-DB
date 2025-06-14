@@ -16,7 +16,7 @@ pipeline {
 
         stage('Unzip Binary') {
             steps {
-                sh 'unzip -o dist/job_portal_binary.zip -d dist/'
+                sh 'unzip -o dist/my_app.zip -d dist/'
             }
         }
 
